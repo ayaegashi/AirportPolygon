@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 
 EPSILON = 0.01
-BASE_URL = "https://www.airnav.com/"
+BASE_URL = "https://www.airnav.com/airport/"
 
 
 class Point:
@@ -59,8 +59,15 @@ def airportsInPolygon(airports, polygon, sorted=True):
                 print("Error:", a, "is an invalid FAA ID")
                 ans.append(False) # could not access airport coordinates
                 continue
+
             soup = BeautifulSoup(page.content, "html.parser")
-            coordStr = soup.find_all("td", string="Lat/Long: ")[0].find_next_sibling("td").find_all("br")[-2].nextSibling
+            coordSoup = soup.find_all("td", string="Lat/Long: ")
+            if len(coordSoup) == 0: # accessed invalid page without latitude/longitude coordinates
+                print("Error:", a, "is an invalid FAA ID")
+                ans.append(False) 
+                continue
+            
+            coordStr = coordSoup[0].find_next_sibling("td").find_all("br")[-2].nextSibling
             coord = [float(x) for x in coordStr.split(",")]
 
         airport = Point(coord[0], coord[1])
