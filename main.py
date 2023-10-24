@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 
 EPSILON = 0.01
-BASE_URL = "https://www.airnav.com"
+BASE_URL = "https://www.airnav.com/"
 
 
 class Point:
@@ -58,6 +58,7 @@ def airportsInPolygon(airports, polygon, sorted=True):
             if not page.ok:
                 print("Error:", a, "is an invalid FAA ID")
                 ans.append(False) # could not access airport coordinates
+                continue
             soup = BeautifulSoup(page.content, "html.parser")
             coordStr = soup.find_all("td", string="Lat/Long: ")[0].find_next_sibling("td").find_all("br")[-2].nextSibling
             coord = [float(x) for x in coordStr.split(",")]
@@ -207,3 +208,23 @@ expected_4 = [True, True, False]
 print("Result:", res_4)
 print("Expected:", expected_4)
 print("Passed:", res_4 == expected_4, "\n")
+
+# Error Handling; invalid polygon
+print("Error handling: invalid polygon")
+airports_5 = ['I58', 'ANQ', 'OEB']
+polygon_5 = [[41.75307, -85.130366], [41.75307, -84.901802]]
+res_5 = airportsInPolygon(airports_5, polygon_5)
+expected_5 = [False, False, False]
+print("Result:", res_5)
+print("Expected:", expected_5)
+print("Passed:", res_5 == expected_5, "\n")
+
+# Error Handling; invalid FAA id
+print("Error handling: invalid FAA id")
+airports_6 = ['I58', 'ANQ', 'OEB', 'ZZZ']
+polygon_6 = [[41.75307, -85.130366], [41.75307, -84.901802], [41.628527, -85.130366], [41.628527, -84.901802]]
+res_6 = airportsInPolygon(airports_6, polygon_6, False)
+expected_6 = [True, True, False, False]
+print("Result:", res_6)
+print("Expected:", expected_6)
+print("Passed:", res_6 == expected_6, "\n")
