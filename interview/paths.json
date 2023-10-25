@@ -1,0 +1,277 @@
+[
+  {
+    "Source": "JFK",
+    "Dest": "LAX",
+    "Fare": 350
+  },
+  {
+    "Source": "LAX",
+    "Dest": "JFK",
+    "Fare": 340
+  },
+  {
+    "Source": "DFW",
+    "Dest": "ORD",
+    "Fare": 195
+  },
+  {
+    "Source": "ATL",
+    "Dest": "DFW",
+    "Fare": 175
+  },
+  {
+    "Source": "SFO",
+    "Dest": "ATL",
+    "Fare": 310
+  },
+  {
+    "Source": "MSP",
+    "Dest": "DEN",
+    "Fare": 215
+  },
+  {
+    "Source": "MIA",
+    "Dest": "MSP",
+    "Fare": 275
+  },
+  {
+    "Source": "SEA",
+    "Dest": "MIA",
+    "Fare": 355
+  },
+  {
+    "Source": "BOS",
+    "Dest": "SEA",
+    "Fare": 305
+  },
+  {
+    "Source": "LAS",
+    "Dest": "BOS",
+    "Fare": 265
+  },
+  {
+    "Source": "IAH",
+    "Dest": "LAS",
+    "Fare": 235
+  },
+  {
+    "Source": "PHX",
+    "Dest": "IAH",
+    "Fare": 195
+  },
+  {
+    "Source": "JFK",
+    "Dest": "PHX",
+    "Fare": 325
+  },
+  {
+    "Source": "DCA",
+    "Dest": "LAX",
+    "Fare": 340
+  },
+  {
+    "Source": "ORD",
+    "Dest": "DFW",
+    "Fare": 200
+  },
+  {
+    "Source": "LAX",
+    "Dest": "ORD",
+    "Fare": 270
+  },
+  {
+    "Source": "ORD",
+    "Dest": "LAX",
+    "Fare": 260
+  },
+  {
+    "Source": "DEN",
+    "Dest": "SFO",
+    "Fare": 140
+  },
+  {
+    "Source": "BWI",
+    "Dest": "LAX",
+    "Fare": 350
+  },
+  {
+    "Source": "LAX",
+    "Dest": "DCA",
+    "Fare": 340
+  },
+  {
+    "Source": "DCA",
+    "Dest": "ORD",
+    "Fare": 275
+  },
+  {
+    "Source": "ORD",
+    "Dest": "DCA",
+    "Fare": 265
+  },
+  {
+    "Source": "IAD",
+    "Dest": "SNA",
+    "Fare": 200
+  },
+  {
+    "Source": "DFW",
+    "Dest": "DCA",
+    "Fare": 195
+  },
+  {
+    "Source": "DFW",
+    "Dest": "ATL",
+    "Fare": 180
+  },
+  {
+    "Source": "ATL",
+    "Dest": "DCA",
+    "Fare": 175
+  },
+  {
+    "Source": "ATL",
+    "Dest": "SFO",
+    "Fare": 320
+  },
+  {
+    "Source": "SFO",
+    "Dest": "DCA",
+    "Fare": 310
+  },
+  {
+    "Source": "SFO",
+    "Dest": "DEN",
+    "Fare": 150
+  },
+  {
+    "Source": "DEN",
+    "Dest": "DCA",
+    "Fare": 145
+  },
+  {
+    "Source": "DEN",
+    "Dest": "MSP",
+    "Fare": 220
+  },
+  {
+    "Source": "MSP",
+    "Dest": "DCA",
+    "Fare": 215
+  },
+  {
+    "Source": "MSP",
+    "Dest": "MIA",
+    "Fare": 280
+  },
+  {
+    "Source": "MIA",
+    "Dest": "DCA",
+    "Fare": 275
+  },
+  {
+    "Source": "MIA",
+    "Dest": "SEA",
+    "Fare": 360
+  },
+  {
+    "Source": "SEA",
+    "Dest": "DCA",
+    "Fare": 355
+  },
+  {
+    "Source": "SEA",
+    "Dest": "BOS",
+    "Fare": 310
+  },
+  {
+    "Source": "BOS",
+    "Dest": "DCA",
+    "Fare": 305
+  },
+  {
+    "Source": "BOS",
+    "Dest": "LAS",
+    "Fare": 270
+  },
+  {
+    "Source": "LAS",
+    "Dest": "DCA",
+    "Fare": 265
+  },
+  {
+    "Source": "LAS",
+    "Dest": "IAH",
+    "Fare": 240
+  },
+  {
+    "Source": "IAH",
+    "Dest": "DCA",
+    "Fare": 235
+  },
+  {
+    "Source": "IAH",
+    "Dest": "PHX",
+    "Fare": 200
+  },
+  {
+    "Source": "PHX",
+    "Dest": "DCA",
+    "Fare": 195
+  },
+  {
+    "Source": "PHX",
+    "Dest": "JFK",
+    "Fare": 330
+  },
+  {
+    "Source": "JFK",
+    "Dest": "DCA",
+    "Fare": 325
+  },
+  {
+    "Source": "DCA",
+    "Dest": "JFK",
+    "Fare": 400
+  },
+  {
+    "Source": "DCA",
+    "Dest": "LGA",
+    "Fare": 381
+  },
+  {
+    "Source": "DCA",
+    "Dest": "EWR",
+    "Fare": 410
+  },
+  {
+    "Source": "BWI",
+    "Dest": "JFK",
+    "Fare": 420
+  },
+  {
+    "Source": "BWI",
+    "Dest": "LGA",
+    "Fare": 390
+  },
+  {
+    "Source": "BWI",
+    "Dest": "EWR",
+    "Fare": 431
+  },
+  {
+    "Source": "IAD",
+    "Dest": "JFK",
+    "Fare": 416
+  },
+  {
+    "Source": "IAD",
+    "Dest": "LGA",
+    "Fare": 386
+  },
+  {
+    "Source": "IAD",
+    "Dest": "EWR",
+    "Fare": 425
+  }
+]
